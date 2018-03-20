@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "LibMonetra-8.0.0", "index.html", [
+  [ "LibMonetra-8.2.0", "index.html", [
     [ "Modules", "modules.html", "modules" ]
   ] ]
 ];
