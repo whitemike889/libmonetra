@@ -262,7 +262,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Callback that is called for each event, both connection-related and transaction related.</p>
 <p>On connection error, each pending transaction will trigger an ERROR event, <em>followed</em> by the connection error or disconnect event itself.</p>
-<p>It is safe to call <a class="el" href="group__LM__conn.html#ga7a32b91b5e98c7a03ae9dcf3e3c5da17">LM_conn_destroy()</a> or <a class="el" href="group__LM__trans.html#ga306a660fea79f4974866e57988599950">LM_trans_delete()</a> within the callback, however if there are events still enqueued for the connection, they will not be delivered so it is recommended to only <a class="el" href="group__LM__conn.html#ga7a32b91b5e98c7a03ae9dcf3e3c5da17">LM_conn_destroy()</a> on LM_EVENT_CONN_DISCONNECT or LM_EVENT_CONN_ERROR</p>
+<p>It is safe to call <a class="el" href="group__LM__conn.html#ga7a32b91b5e98c7a03ae9dcf3e3c5da17">LM_conn_destroy()</a> or <a class="el" href="group__LM__trans.html#ga306a660fea79f4974866e57988599950">LM_trans_delete()</a> within the callback, however if there are events still enqueued for a connection when destroyed, they will not be delivered so it is recommended to only <a class="el" href="group__LM__conn.html#ga7a32b91b5e98c7a03ae9dcf3e3c5da17">LM_conn_destroy()</a> on LM_EVENT_CONN_DISCONNECT or LM_EVENT_CONN_ERROR.</p>
+<p>It is also possible that if <a class="el" href="group__LM__trans.html#ga306a660fea79f4974866e57988599950">LM_trans_delete()</a> is called in the callback that events for that transaction may still be delivered for a short time after, but it is guaranteed that if that occurs, <a class="el" href="group__LM__trans.html#ga0750219687523b1ed115c95cc812e186">LM_trans_get_userdata()</a> will return NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">conn</td><td>Connection handle associated with the event </td></tr>
@@ -273,7 +274,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00260">260</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00264">264</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +297,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00417">417</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00421">421</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1038,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 28 2018 16:32:07 for LibMonetra-8.3.0 by
+    <li class="footer">Generated on Fri Dec 7 2018 20:22:28 for LibMonetra-8.3.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
