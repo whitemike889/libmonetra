@@ -426,7 +426,7 @@ var searchData=
   ['mcve_5fuwait',['MCVE_uwait',['../group__LM__deprecated.html#ga6a57bb251e7e0c73e3f7e54cb6de9590',1,'libmonetra_deprecated.h']]],
   ['mcve_5fverifyconnection',['MCVE_VerifyConnection',['../group__LM__deprecated.html#ga409c9fb3d1fa785f9ffe7e09fc74ab60',1,'libmonetra_deprecated.h']]],
   ['mcve_5fverifysslcert',['MCVE_VerifySSLCert',['../group__LM__deprecated.html#gab87812bba302bb7d24f02c4c1582e6d7',1,'libmonetra_deprecated.h']]],
-  ['mcve_5fvoid',['MCVE_VOID',['../group__LM__deprecated.html#ga75cbfab1e7402e77c002b21d8c786005',1,'MCVE_VOID():&#160;libmonetra_deprecated.h'],['../group__LM__deprecated.html#ga07947b3362b1d9ddb84368904cb0c749',1,'MCVE_Void():&#160;libmonetra_deprecated.h']]],
+  ['mcve_5fvoid',['MCVE_Void',['../group__LM__deprecated.html#ga07947b3362b1d9ddb84368904cb0c749',1,'MCVE_Void():&#160;libmonetra_deprecated.h'],['../group__LM__deprecated.html#ga75cbfab1e7402e77c002b21d8c786005',1,'MCVE_VOID():&#160;libmonetra_deprecated.h']]],
   ['mcve_5fzip',['MCVE_ZIP',['../group__LM__deprecated.html#gaad7e34b1b7b180666fed77d56e3e3a61',1,'libmonetra_deprecated.h']]],
   ['mcve_5fzipcode',['MCVE_ZIPCODE',['../group__LM__deprecated.html#gaba9b298609436f4a46993ebd496561e7',1,'libmonetra_deprecated.h']]]
 ];

@@ -144,11 +144,16 @@ Modules</h2></td></tr>
 <div class="line">            <a class="code" href="group__LM__conn.html#gaa73520b072656c97e59ca664aba37cbd">LM_conn_disconnect</a>(conn);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"></div>
+<div class="line">        <span class="keywordflow">case</span> <a class="code" href="group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11eaef664594d768a16f090b329d5153659e">LM_EVENT_TRANS_TIMEOUT</a>:</div>
+<div class="line">            M_printf(<span class="stringliteral">&quot;\tTransaction %p timed out\n&quot;</span>, trans);</div>
+<div class="line">            <span class="comment">// Transaction will actually stay enqueued and may later return LM_EVENT_TRANS_DONE.</span></div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line"></div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea1e30fee273d3d58ef3f935ea049df946">LM_EVENT_TRANS_ERROR</a>:</div>
 <div class="line">        <span class="keywordflow">case</span> <a class="code" href="group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea65baff0ca0061fe4a2d0fb8f597a8b00">LM_EVENT_TRANS_NOCONNECT</a>:</div>
 <div class="line">            M_printf(<span class="stringliteral">&quot;Transaction %p error (connectivity): %s\n&quot;</span>, trans, <a class="code" href="group__LM__conn.html#ga6a7e053c5816d9fe8d42358cc9b374e5">LM_conn_error</a>(conn));</div>
 <div class="line">            <a class="code" href="group__LM__trans.html#ga306a660fea79f4974866e57988599950">LM_trans_delete</a>(trans);</div>
-<div class="line">            <span class="comment">// We should still get an LM_EVENT_CONN_ERROR after this event for additional cleanup. </span></div>
+<div class="line">            <span class="comment">// We should still get an LM_EVENT_CONN_ERROR after this event for additional cleanup.</span></div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
@@ -189,7 +194,7 @@ Modules</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Dec 8 2018 15:15:26 for LibMonetra-8.3.0 by
+    <li class="footer">Generated on Mon Dec 10 2018 14:48:43 for LibMonetra-8.3.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

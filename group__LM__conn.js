@@ -12,7 +12,8 @@ var group__LM__conn =
       [ "LM_EVENT_CONN_ERROR", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea9bdbf15673a7c41a4f42919850b1020f", null ],
       [ "LM_EVENT_TRANS_DONE", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea3dd7b9eea2905177a81d2a10d72d8977", null ],
       [ "LM_EVENT_TRANS_ERROR", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea1e30fee273d3d58ef3f935ea049df946", null ],
-      [ "LM_EVENT_TRANS_NOCONNECT", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea65baff0ca0061fe4a2d0fb8f597a8b00", null ]
+      [ "LM_EVENT_TRANS_NOCONNECT", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea65baff0ca0061fe4a2d0fb8f597a8b00", null ],
+      [ "LM_EVENT_TRANS_TIMEOUT", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11eaef664594d768a16f090b329d5153659e", null ]
     ] ],
     [ "LM_mode", "group__LM__conn.html#ga7ea8f56b66aaf0ba1d4d551c67ae4be2", [
       [ "LM_MODE_TLS", "group__LM__conn.html#gga7ea8f56b66aaf0ba1d4d551c67ae4be2af8d676ad7d778e8e22a4652f7f998f85", null ],

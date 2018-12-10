@@ -150,6 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga05197e2a06083fcf1c7b1a0d61201b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga32fb8d552504e2696a9546529286906d"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LM__trans.html#ga32fb8d552504e2696a9546529286906d">LM_trans_set_param_binary</a> (<a class="el" href="group__LM__trans.html#ga44d8f3270ba53948b345f8d2f9932832">LM_trans_t</a> *trans, const char *key, const unsigned char *value, size_t value_len)</td></tr>
 <tr class="separator:ga32fb8d552504e2696a9546529286906d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8d3cd3625e5fff511ab2b3611b8ba47"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LM__trans.html#gae8d3cd3625e5fff511ab2b3611b8ba47">LM_trans_set_timeout</a> (<a class="el" href="group__LM__trans.html#ga44d8f3270ba53948b345f8d2f9932832">LM_trans_t</a> *trans, M_uint64 timeout_s)</td></tr>
+<tr class="separator:gae8d3cd3625e5fff511ab2b3611b8ba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55767b507f5baeca4bc75df38a5a0cac"><td class="memItemLeft" align="right" valign="top">M_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LM__trans.html#ga55767b507f5baeca4bc75df38a5a0cac">LM_trans_send</a> (<a class="el" href="group__LM__trans.html#ga44d8f3270ba53948b345f8d2f9932832">LM_trans_t</a> *trans)</td></tr>
 <tr class="separator:ga55767b507f5baeca4bc75df38a5a0cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c608a05db7b24ed59edaa79bd29bdb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__LM__trans.html#ga44d8f3270ba53948b345f8d2f9932832">LM_trans_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LM__trans.html#ga9c608a05db7b24ed59edaa79bd29bdb7">LM_trans_run</a> (<a class="el" href="group__LM__conn.html#ga0519933ee4779f352477360031fd0f83">LM_conn_t</a> *conn, const M_hash_dict_t *params)</td></tr>
@@ -194,7 +196,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00193">193</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00202">202</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +210,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00203">203</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00212">212</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
 
 </div>
 </div>
@@ -222,7 +224,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00212">212</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00221">221</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
 
 </div>
 </div>
@@ -255,19 +257,19 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00196">196</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                     {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b">LM_TRANS_STATUS_ALL</a>     = 1, <span class="comment">/*!&lt; All transactions (only relevant for count)           */</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d">LM_TRANS_STATUS_NEW</a>     = 2, <span class="comment">/*!&lt; Transaction not yet sent (being structured)          */</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3">LM_TRANS_STATUS_READY</a>   = 3, <span class="comment">/*!&lt; Transaction in ready state (means not connected yet) */</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81">LM_TRANS_STATUS_PENDING</a> = 4, <span class="comment">/*!&lt; Transaction waiting on response                      */</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880">LM_TRANS_STATUS_DONE</a>    = 5  <span class="comment">/*!&lt; Transaction Finished                                 */</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
-<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d">LM_TRANS_STATUS_NEW</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00198">monetra_api.h:198</a></div></div>
-<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b">LM_TRANS_STATUS_ALL</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00197">monetra_api.h:197</a></div></div>
-<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3">LM_TRANS_STATUS_READY</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00199">monetra_api.h:199</a></div></div>
-<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81">LM_TRANS_STATUS_PENDING</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00200">monetra_api.h:200</a></div></div>
-<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880">LM_TRANS_STATUS_DONE</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00201">monetra_api.h:201</a></div></div>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00205">205</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                     {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b">LM_TRANS_STATUS_ALL</a>     = 1, <span class="comment">/*!&lt; All transactions (only relevant for count)           */</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d">LM_TRANS_STATUS_NEW</a>     = 2, <span class="comment">/*!&lt; Transaction not yet sent (being structured)          */</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3">LM_TRANS_STATUS_READY</a>   = 3, <span class="comment">/*!&lt; Transaction in ready state (means not connected yet) */</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81">LM_TRANS_STATUS_PENDING</a> = 4, <span class="comment">/*!&lt; Transaction waiting on response                      */</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880">LM_TRANS_STATUS_DONE</a>    = 5  <span class="comment">/*!&lt; Transaction Finished                                 */</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;};</div>
+<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a573dac5e682c82cc262f2378da89ec4d">LM_TRANS_STATUS_NEW</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00207">monetra_api.h:207</a></div></div>
+<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a070d4d000488caef08036104d9a7f38b">LM_TRANS_STATUS_ALL</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00206">monetra_api.h:206</a></div></div>
+<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a8d4f3e445b848455c7886d316da820d3">LM_TRANS_STATUS_READY</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00208">monetra_api.h:208</a></div></div>
+<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a9871328296dceaf39e1ff23f511f8b81">LM_TRANS_STATUS_PENDING</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00209">monetra_api.h:209</a></div></div>
+<div class="ttc" id="group__LM__trans_html_gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880"><div class="ttname"><a href="group__LM__trans.html#gga98ed945b035997891d469044832f49e2a0104f4b1bdf6a9f91b097ee7cf131880">LM_TRANS_STATUS_DONE</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00210">monetra_api.h:210</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,17 +298,17 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00206">206</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                            {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de">LM_TRANS_RESPONSE_UNKNOWN</a> = 0, <span class="comment">/*!&lt; Unknown response type (e.g. response not back yet) */</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011">LM_TRANS_RESPONSE_KV</a>      = 1, <span class="comment">/*!&lt; Response is key/value pairs                        */</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8">LM_TRANS_RESPONSE_CSV</a>     = 2, <span class="comment">/*!&lt; Response is CSV data                               */</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd">LM_TRANS_RESPONSE_BULK</a>    = 3  <span class="comment">/*!&lt; Other bulk data format                             */</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;};</div>
-<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011">LM_TRANS_RESPONSE_KV</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00208">monetra_api.h:208</a></div></div>
-<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8">LM_TRANS_RESPONSE_CSV</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00209">monetra_api.h:209</a></div></div>
-<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd">LM_TRANS_RESPONSE_BULK</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00210">monetra_api.h:210</a></div></div>
-<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de">LM_TRANS_RESPONSE_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00207">monetra_api.h:207</a></div></div>
+<p>Definition at line <a class="el" href="monetra__api_8h_source.html#l00215">215</a> of file <a class="el" href="monetra__api_8h_source.html">monetra_api.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                            {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de">LM_TRANS_RESPONSE_UNKNOWN</a> = 0, <span class="comment">/*!&lt; Unknown response type (e.g. response not back yet) */</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011">LM_TRANS_RESPONSE_KV</a>      = 1, <span class="comment">/*!&lt; Response is key/value pairs                        */</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8">LM_TRANS_RESPONSE_CSV</a>     = 2, <span class="comment">/*!&lt; Response is CSV data                               */</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd">LM_TRANS_RESPONSE_BULK</a>    = 3  <span class="comment">/*!&lt; Other bulk data format                             */</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;};</div>
+<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a5ab3ab23e7e4fd091df599af0832e011">LM_TRANS_RESPONSE_KV</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00217">monetra_api.h:217</a></div></div>
+<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a707ff24ec1c440e4dd745cd8333e75d8">LM_TRANS_RESPONSE_CSV</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00218">monetra_api.h:218</a></div></div>
+<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59add83427532c82e91e3dd693d795d95dd">LM_TRANS_RESPONSE_BULK</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00219">monetra_api.h:219</a></div></div>
+<div class="ttc" id="group__LM__trans_html_ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de"><div class="ttname"><a href="group__LM__trans.html#ggac24ac86bc910e145168da2787d246a59a617086929bbdfec42211bb785c0d61de">LM_TRANS_RESPONSE_UNKNOWN</a></div><div class="ttdef"><b>Definition:</b> <a href="monetra__api_8h_source.html#l00216">monetra_api.h:216</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -499,6 +501,44 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>M_TRUE on success, M_FALSE on error. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae8d3cd3625e5fff511ab2b3611b8ba47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">M_bool LM_trans_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__LM__trans.html#ga44d8f3270ba53948b345f8d2f9932832">LM_trans_t</a> *&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">M_uint64&#160;</td>
+          <td class="paramname"><em>timeout_s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set a user-specified timeout in seconds for notification purposes.</p>
+<p>Sets a notification timeout on the transaction. When the timeout elapses, an LM_EVENT_TRANS_TIMEOUT event will be delivered. This event does NOT however cancel the transaction and instead is simply a notification that the user-specified timer has elapsed. The user may choose to delete the transaction, or continue waiting for another signal such as LM_EVENT_TRANS_DONE.</p>
+<p>Only transactions that have not had <a class="el" href="group__LM__trans.html#ga55767b507f5baeca4bc75df38a5a0cac">LM_trans_send()</a> called are eligible to be set for timeout.</p>
+<p>The timeout timer starts once the transaction has been put on the wire, so if there are errors connecting, the timer will not start until a connection has been established. The timer is bound to the same event loop as the established connection so it is guaranteed they will signal using the same thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trans</td><td>Initialized transaction object by <a class="el" href="group__LM__trans.html#ga16a05c7e3817f08b0afee9bac8b4ae3f">LM_trans_new()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_s</td><td>Seconds after sending for the timeout signal to be delivered. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>M_TRUE if successfully set, M_FALSE on misuse. </dd></dl>
 
 </div>
 </div>
@@ -948,7 +988,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Dec 8 2018 15:15:26 for LibMonetra-8.3.0 by
+    <li class="footer">Generated on Mon Dec 10 2018 14:48:43 for LibMonetra-8.3.0 by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

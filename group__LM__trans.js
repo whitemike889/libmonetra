@@ -21,6 +21,7 @@ var group__LM__trans =
     [ "LM_trans_new", "group__LM__trans.html#ga16a05c7e3817f08b0afee9bac8b4ae3f", null ],
     [ "LM_trans_set_param", "group__LM__trans.html#ga05197e2a06083fcf1c7b1a0d61201b74", null ],
     [ "LM_trans_set_param_binary", "group__LM__trans.html#ga32fb8d552504e2696a9546529286906d", null ],
+    [ "LM_trans_set_timeout", "group__LM__trans.html#gae8d3cd3625e5fff511ab2b3611b8ba47", null ],
     [ "LM_trans_send", "group__LM__trans.html#ga55767b507f5baeca4bc75df38a5a0cac", null ],
     [ "LM_trans_run", "group__LM__trans.html#ga9c608a05db7b24ed59edaa79bd29bdb7", null ],
     [ "LM_trans_set_userdata", "group__LM__trans.html#ga5beeb2c6e72490a7e05223c925c400e5", null ],

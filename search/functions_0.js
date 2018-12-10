@@ -36,6 +36,7 @@ var searchData=
   ['lm_5ftrans_5fsend',['LM_trans_send',['../group__LM__trans.html#ga55767b507f5baeca4bc75df38a5a0cac',1,'monetra_api.h']]],
   ['lm_5ftrans_5fset_5fparam',['LM_trans_set_param',['../group__LM__trans.html#ga05197e2a06083fcf1c7b1a0d61201b74',1,'monetra_api.h']]],
   ['lm_5ftrans_5fset_5fparam_5fbinary',['LM_trans_set_param_binary',['../group__LM__trans.html#ga32fb8d552504e2696a9546529286906d',1,'monetra_api.h']]],
+  ['lm_5ftrans_5fset_5ftimeout',['LM_trans_set_timeout',['../group__LM__trans.html#gae8d3cd3625e5fff511ab2b3611b8ba47',1,'monetra_api.h']]],
   ['lm_5ftrans_5fset_5fuserdata',['LM_trans_set_userdata',['../group__LM__trans.html#ga5beeb2c6e72490a7e05223c925c400e5',1,'monetra_api.h']]],
   ['lm_5ftrans_5fstatus',['LM_trans_status',['../group__LM__trans.html#ga8da9e5cc65be79f791ae5855d06b3d71',1,'monetra_api.h']]]
 ];

@@ -11,6 +11,7 @@ var searchData=
   ['lm_5fevent_5ftrans_5fdone',['LM_EVENT_TRANS_DONE',['../group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea3dd7b9eea2905177a81d2a10d72d8977',1,'monetra_api.h']]],
   ['lm_5fevent_5ftrans_5ferror',['LM_EVENT_TRANS_ERROR',['../group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea1e30fee273d3d58ef3f935ea049df946',1,'monetra_api.h']]],
   ['lm_5fevent_5ftrans_5fnoconnect',['LM_EVENT_TRANS_NOCONNECT',['../group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea65baff0ca0061fe4a2d0fb8f597a8b00',1,'monetra_api.h']]],
+  ['lm_5fevent_5ftrans_5ftimeout',['LM_EVENT_TRANS_TIMEOUT',['../group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11eaef664594d768a16f090b329d5153659e',1,'monetra_api.h']]],
   ['lm_5finit_5fnormal',['LM_INIT_NORMAL',['../group__LM__init.html#gga9b6f60712f7c32016497a35576c53523a01f0a5c18a641ffbe693ceb13640410a',1,'monetra_api.h']]],
   ['lm_5finit_5fssllock_5fexternal',['LM_INIT_SSLLOCK_EXTERNAL',['../group__LM__init.html#gga9b6f60712f7c32016497a35576c53523a49d23a1576057e1e19bc35c786041dae',1,'monetra_api.h']]],
   ['lm_5fmode_5fip',['LM_MODE_IP',['../group__LM__conn.html#gga7ea8f56b66aaf0ba1d4d551c67ae4be2a12ef7b620dfaa49b71b398f7c56fd8b0',1,'monetra_api.h']]],
