@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deprecated_20api',['Deprecated API',['../group__LM__deprecated.html',1,'']]]
+  ['connection_20management',['Connection Management',['../group__LM__conn.html',1,'']]]
 ];

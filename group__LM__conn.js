@@ -4,8 +4,8 @@ var group__LM__conn =
     [ "LM_event_type_t", "group__LM__conn.html#ga0ac0d6c431a436ee9ab1a0103cea1f05", null ],
     [ "LM_mode_t", "group__LM__conn.html#gaefb2b17d946c6bfe9b007f48efbc9b35", null ],
     [ "LM_conn_status_t", "group__LM__conn.html#ga8dd08ef6136104feb80f0d6f4f572f11", null ],
-    [ "LM_event_callback_t", "group__LM__conn.html#ga03f6d4a9e6d2ca83fb9f8ac12b7c7cad", null ],
-    [ "LM_conn_iocreate_callback_t", "group__LM__conn.html#ga537631929b7cf8e06b04e59ec24fa3eb", null ],
+    [ "LM_event_callback_t", "group__LM__conn.html#ga6ab923a2dc1ab84bfb37d2efd0aa20d7", null ],
+    [ "LM_conn_iocreate_callback_t", "group__LM__conn.html#ga2bb566a045116cb9530bfdd255323b46", null ],
     [ "LM_event_type", "group__LM__conn.html#ga85c131eef904bac2fdff072c8f4fe11e", [
       [ "LM_EVENT_CONN_CONNECTED", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11ea206d80d7eada8750c9f3dbce805175e1", null ],
       [ "LM_EVENT_CONN_DISCONNECT", "group__LM__conn.html#gga85c131eef904bac2fdff072c8f4fe11eaec304b04600b0e7a793d857ef5cd7940", null ],
